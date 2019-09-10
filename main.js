@@ -268,7 +268,7 @@ var ClientDetailComponent = /** @class */ (function () {
             {
                 title: "Proposta Pendente",
                 icon: "fa-truck",
-                value: clients.selected.info.entregas,
+                value: "1",
                 color: ""
             },
             {
