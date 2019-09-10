@@ -254,19 +254,19 @@ var ClientDetailComponent = /** @class */ (function () {
         this.graphs = [];
         this.graphs = [
             {
-                title: "Pedidos",
+                title: "Cliente Preferencial",
                 icon: "fa-th-list",
-                value: clients.selected.info.pedidos,
+                value: "Sim",
                 color: ""
             },
             {
-                title: "Pedidos R$",
+                title: "Bourbon Card",
                 icon: "fa-usd",
-                value: clients.selected.info.pedidosValor,
+                value: "10100010001 validade 00/00",
                 color: ""
             },
             {
-                title: "Entregas Atrasadas",
+                title: "Proposta Pendente",
                 icon: "fa-truck",
                 value: clients.selected.info.entregas,
                 color: ""
@@ -499,7 +499,7 @@ var MinigraphComponent = /** @class */ (function () {
         this.fontBounce = "";
     }
     MinigraphComponent.prototype.ngOnInit = function () {
-        if (this.item.title == "Entregas Atrasadas" && this.item.value != "0") {
+        if (this.item.title == "Proposta Pendente" && this.item.value != "0") {
             this.fontBounce = "fac-bounce";
             this.item.color = "#E6324B";
         }
